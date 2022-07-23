@@ -19,6 +19,10 @@ a{
     color: #000000;
 }
 
+p{
+    margin: 3.2rem 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     margin: 0 0 5rem 0;
@@ -74,6 +78,8 @@ img{
 
 /* Body */
 
+/* nuestra historia */
+
 .nav-principal{
     padding: 1rem 0;
     display: flex;
@@ -112,15 +118,145 @@ img{
     background-size: cover;
     background-position: center center;
     height: 44rem;
-
 }
 
 .parrafo-nuestra-historia{
     grid-column: 2/3;
     margin: 0 4.1rem 0 5.5rem;
     font-size: 1.6rem;
-    word-break: break-all;
+    height: 44rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.parrafo-nuestra-historia:hover {
+    overflow: visible;
+  }
 
+/* mision, vision y valores */
+
+.mision-vision-valores-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-top: 5rem;
+}
+
+.mision-vision-valores-grid h2{
+    color: #2988E0;
+}
+
+.contenedor-mision{
+    height: 40rem;
+    background-color: #EFEFEF;
+    border-top: #2988E0 solid 1.5rem;
+    margin-left: 5rem;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+
+.contenedor-vision{
+    height: 40rem;
+    background-color: #EFEFEF;
+    border-top: #2988E0 solid 1.5rem;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+
+.contenedor-valores{
+    height: 40rem;
+    background-color: #EFEFEF;
+    border-top: #2988E0 solid 1.5rem;
+    margin-right: 5rem;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+
+/* nuestro equipo */
+
+.nuestro-equipo-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 30rem);
+    margin-top: 5rem;
+    row-gap: 4.2rem;
+    column-gap: 6.3rem;
+}
+
+.contenido-nuestro-equipo{
+    grid-column: 2/2;
+    grid-row: 1/4;
+    background-color: #7ABBF6;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    margin-right: 5rem;
+    color: white;
+}
+
+.img1-nuestro-equipo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../img/nuestro-equipo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 5rem;
+
+}
+
+.img2-nuestro-equipo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../img/nuestro-equipo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 5rem;
+}
+
+.img3-nuestro-equipo{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../img/nuestro-equipo-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 5rem;
+}
+
+/* Footer */
+
+.site-footer{
+    border-top: 1px solid #C1C1C1;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.site-footer h3 {
+    margin-bottom: .5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-menu a{
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: #828282;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #828282;
+}
 
