@@ -318,7 +318,7 @@ class = si se pueden repetir y tambien se puede usar
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .blog:nth-child(1){
@@ -335,6 +335,26 @@ class = si se pueden repetir y tambien se puede usar
     background-repeat: no-repeat;
     object-position: right bottom;
 }
+
+.blog:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    box-shadow: 0px 0px 20px #9C9C9C;
+}
+
+.blog:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+    box-shadow: 0px 0px 20px #9C9C9C;
+}
+
+.blog:nth-child(2) img,
+.blog:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .texto-blog {
     text-align: left;
@@ -362,10 +382,11 @@ class = si se pueden repetir y tambien se puede usar
     margin-top: 5rem;
     display: flex;
     background-image: url(../img/icon-heart.png);
-    background-position: right center;
+    background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 3rem, 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    
 }
 
 .texto-icon a {
@@ -374,3 +395,21 @@ class = si se pueden repetir y tambien se puede usar
     font-weight: bold;
 }
 
+
+/* Recuadros pequenos del blog*/
+
+.texto-cuadro-blog {
+    padding: 0 2rem 0 2rem;
+}
+
+.texto-cuadro-blog h3{
+    padding-top: 3rem;
+    color: #2988E0;
+}
+
+
+.texto-cuadro-blog a{
+    color: #2988E0;
+    position: bottom;
+    
+}
