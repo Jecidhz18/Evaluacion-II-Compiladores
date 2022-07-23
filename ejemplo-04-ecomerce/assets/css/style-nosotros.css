@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Header y Navegacion */
+
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: #2988E0;
+}
+
+.contenedor-navegacion{
+    border-top: .1rem solid #C1C1C1;
+}
+
+.baner{
+    background-image: url('../img/banner-nosotros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}
+
+/* Body */
+
+.nav-principal{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor-nav-secundario{
+    margin-top: 2.3rem;
+    background: #EFEFEF;
+    box-shadow: 0 0.1rem 0.7rem -0.1rem #000000;
+}
+
+.nav-secundario{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nuestra-historia-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.title-nuestra-historia{
+    grid-column: 1/3;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.img-nuestra-historia{
+    grid-column: 1/2;
+    background-image: url('../img/nuestra-historia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 44rem;
+
+}
+
+.parrafo-nuestra-historia{
+    grid-column: 2/3;
+    margin: 0 4.1rem 0 5.5rem;
+    font-size: 1.6rem;
+    word-break: break-all;
+}
+
+
+
