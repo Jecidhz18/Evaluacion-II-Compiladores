@@ -853,7 +853,6 @@ class = si se pueden repetir y tambien se puede usar
     grid-template-columns: repeat(6, 1fr);
 }
 
-
 .imagen-contacto:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 3;
