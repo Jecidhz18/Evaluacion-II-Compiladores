@@ -67,9 +67,14 @@ img{
     text-align: center;
 }
 
-.gap {
+.gap-top {
+    margin-top: 10rem;
+}
+
+.gap-bottom {
     margin-bottom: 10rem;
 }
+
 
 /* Header y Navegacion */
 
@@ -452,4 +457,127 @@ class = si se pueden repetir y tambien se puede usar
     color: #2988E0;
     position: bottom;
     
+}
+
+
+/* Diseno Page Galeria */
+
+/* DISENO GALERIA OFICINA */
+
+.listado-galeria {
+    max-width: 90%;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 2rem;
+    row-gap: 2rem;
+}
+
+/* SECCION 1 */
+
+
+.galeria:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.galeria:nth-child(1) img {
+    height: 69.7rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SECCION 2 */
+
+.galeria:nth-child(2){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: grid;
+    row-gap: 2rem;
+}
+
+.galeria:nth-child(2) img {
+    height: 69.7rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria:nth-child(2) .galeria-seccion:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria:nth-child(2) .galeria-seccion:nth-child(1) img {
+    height: 33.9rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria:nth-child(2) .galeria-seccion:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria:nth-child(2) .galeria-seccion:nth-child(2) img {
+    height: 33.9rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+}
+
+/* SECCION 3 */
+
+.galeria:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    gap: 2rem;
+}
+
+.galeria:nth-child(3) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(1) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(2) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria:nth-child(3) .galeria-seccion:nth-child(3) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
 }
