@@ -465,8 +465,8 @@ class = si se pueden repetir y tambien se puede usar
 /* DISENO GALERIA OFICINA */
 
 .listado-galeria {
-    max-width: 90%;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: repeat(6, 2fr);
     gap: 2rem;
@@ -581,3 +581,131 @@ class = si se pueden repetir y tambien se puede usar
     object-fit: cover;
     object-position: left;
 }
+
+
+/* DISENO GALERIA HOGAR */
+
+/* SECCION 1 */
+
+
+.galeria2:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria2:nth-child(1) img {
+    height: 74.4rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SECCION 2 */
+
+.galeria2:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    gap: 2rem;
+}
+
+.galeria2:nth-child(2) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(1) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(2) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria2:nth-child(2) .galeria-seccion2:nth-child(3) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+
+/* SECCION 3 */
+
+.galeria2:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    gap: 2rem;
+}
+
+.galeria2:nth-child(3) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(1) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(2) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.galeria2:nth-child(3) .galeria-seccion2:nth-child(3) img {
+    height: 42rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
