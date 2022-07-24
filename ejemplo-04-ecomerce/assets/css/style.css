@@ -68,7 +68,7 @@ img{
 }
 
 .gap-top {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .gap-bottom {
@@ -839,3 +839,143 @@ class = si se pueden repetir y tambien se puede usar
     object-position: center;
 }
 
+
+
+/*Diseño Contacto Page*/
+
+.contacto {
+    width: 100%;
+}
+
+.cuadro-contacto {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+.imagen-contacto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.imagen-contacto:nth-child(1) img {
+    height: 66.4rem;
+    width: 41.2rem;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-position: center;
+}
+
+.imagen-contacto:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.imagen-contacto:nth-child(2) img {
+    height: 66.4rem;
+    width: 41.2rem;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-position: left;
+}
+
+.imagen-contacto:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: grid;
+}
+
+.imagen-contacto:nth-child(3) img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-position: left;
+}
+
+.imagen-contacto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.imagen-contacto:nth-child(4) img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-position: left;
+}
+
+
+.texto-contacto {
+    padding: 0 0 0 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+
+.icon-contacto{
+    width: 20%;
+    height: 25%;
+    border-left: 2px solid #828282;
+    padding: 0 1rem 0 2rem;
+}
+
+
+.texto-info {
+    width: 80%;
+    padding: 0 2rem 0 2rem;
+}
+
+.texto-info h4{
+    font-size: 2rem;
+    color: #828282;
+    font-weight: bold;
+    margin: 0;
+}
+
+.texto-info p{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+.texto-ubicacion {
+    height: 8.6rem;
+    background-color: #2988E0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icon-ubicacion{
+    width: 8rem;
+    height: 100%;
+    padding: 1rem 1rem 1rem 2rem;
+    
+}
+
+.info-ubicacion {
+    width: 80%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.info-ubicacion h4{
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+.info-ubicacion p{
+    color: #D9D9D9;
+    font-size: 2rem;
+    margin: auto;
+}
