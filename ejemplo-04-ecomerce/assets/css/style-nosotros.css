@@ -1,46 +1,55 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1REM = 10px */
+    font-size: 62.5%;
+    /* 1REM = 10px */
 }
-  *, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 /* Globales */
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
 
-p{
+p {
     margin: 3.2rem 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     margin: 0 0 5rem 0;
 }
 
-h1{
+h1 {
     font-size: 5rem;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
-.contenedor{
+.contenedor {
     max-width: 120rem;
     margin-top: 0;
     margin-right: auto;
@@ -48,9 +57,14 @@ h3{
     margin-left: auto;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
+}
+
+li {
+    list-style: none;
+    margin-left: 11%;
 }
 
 /* Header y Navegacion */
@@ -60,15 +74,15 @@ img{
     text-align: center;
 }
 
-.nombre-sitio span{
+.nombre-sitio span {
     color: #2988E0;
 }
 
-.contenedor-navegacion{
+.contenedor-navegacion {
     border-top: .1rem solid #C1C1C1;
 }
 
-.baner{
+.baner {
     background-image: url('../img/banner-nosotros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,38 +94,38 @@ img{
 
 /* nuestra historia */
 
-.nav-principal{
+.nav-principal {
     padding: 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.contenedor-nav-secundario{
+.contenedor-nav-secundario {
     margin-top: 2.3rem;
     background: #EFEFEF;
     box-shadow: 0 0.1rem 0.7rem -0.1rem #000000;
 }
 
-.nav-secundario{
+.nav-secundario {
     padding: 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nuestra-historia-grid{
+.nuestra-historia-grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
 
-.title-nuestra-historia{
+.title-nuestra-historia {
     grid-column: 1/3;
     margin-top: 5rem;
     text-align: center;
 }
 
-.img-nuestra-historia{
+.img-nuestra-historia {
     grid-column: 1/2;
     background-image: url('../img/nuestra-historia.jpg');
     background-repeat: no-repeat;
@@ -120,7 +134,7 @@ img{
     height: 44rem;
 }
 
-.parrafo-nuestra-historia{
+.parrafo-nuestra-historia {
     grid-column: 2/3;
     margin: 0 4.1rem 0 5.5rem;
     font-size: 1.6rem;
@@ -131,22 +145,22 @@ img{
 
 .parrafo-nuestra-historia:hover {
     overflow: visible;
-  }
+}
 
 /* mision, vision y valores */
 
-.mision-vision-valores-grid{
+.mision-vision-valores-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-top: 5rem;
 }
 
-.mision-vision-valores-grid h2{
+.mision-vision-valores-grid h2 {
     color: #2988E0;
 }
 
-.contenedor-mision{
+.contenedor-mision {
     height: 40rem;
     background-color: #EFEFEF;
     border-top: #2988E0 solid 1.5rem;
@@ -156,7 +170,7 @@ img{
     align-content: center;
 }
 
-.contenedor-vision{
+.contenedor-vision {
     height: 40rem;
     background-color: #EFEFEF;
     border-top: #2988E0 solid 1.5rem;
@@ -165,7 +179,7 @@ img{
     align-content: center;
 }
 
-.contenedor-valores{
+.contenedor-valores {
     height: 40rem;
     background-color: #EFEFEF;
     border-top: #2988E0 solid 1.5rem;
@@ -177,16 +191,16 @@ img{
 
 /* nuestro equipo */
 
-.nuestro-equipo-grid{
+.nuestro-equipo-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 30rem);
     margin-top: 5rem;
     row-gap: 4.2rem;
     column-gap: 6.3rem;
 }
 
-.contenido-nuestro-equipo{
+.contenido-nuestro-equipo {
     grid-column: 2/2;
     grid-row: 1/4;
     background-color: #7ABBF6;
@@ -197,7 +211,7 @@ img{
     color: white;
 }
 
-.img1-nuestro-equipo{
+.img1-nuestro-equipo {
     grid-column: 1/2;
     grid-row: 1/2;
     background-image: url(../img/nuestro-equipo-1.jpg);
@@ -208,7 +222,7 @@ img{
 
 }
 
-.img2-nuestro-equipo{
+.img2-nuestro-equipo {
     grid-column: 1/2;
     grid-row: 2/3;
     background-image: url(../img/nuestro-equipo-2.jpg);
@@ -218,7 +232,7 @@ img{
     margin-left: 5rem;
 }
 
-.img3-nuestro-equipo{
+.img3-nuestro-equipo {
     grid-column: 1/2;
     grid-row: 3/4;
     background-image: url(../img/nuestro-equipo-3.jpg);
@@ -230,7 +244,7 @@ img{
 
 /* Footer */
 
-.site-footer{
+.site-footer {
     border-top: 1px solid #C1C1C1;
     margin-top: 3rem;
     padding-top: 3rem;
@@ -240,13 +254,13 @@ img{
     margin-bottom: .5rem;
 }
 
-.grid-footer{
+.grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.footer-menu a{
+.footer-menu a {
     display: block;
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -260,3 +274,179 @@ img{
     color: #828282;
 }
 
+/* tienda page */
+
+.body-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.menu-filtros {
+    background-color: #F6F6F6;
+}
+
+.nav-categorias {
+    height: 35rem;
+    display: flex;
+}
+
+.nav-categorias li {
+    margin-top: 5rem;
+}
+
+.nav-filtros {
+    border-top: #2988E0 2px solid;
+}
+
+.nav-filtros ul {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.li-ocultar-filtros {
+    margin-top: 6.5rem;
+}
+
+.buscar-producto {
+    height: 5rem;
+    width: 64.5rem;
+    outline: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    border: #000000 0.2rem solid;
+    background: url(../img/icon-buscar.png) no-repeat;
+    background-size: 3.2rem;
+    background-position: 98%;
+}
+
+.img-carrito {
+    height: 6.8rem;
+    background-image: url(../img/icon-carrito.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carrucel {
+    width: 90rem;
+    height: 47rem;
+    overflow: hidden;
+}
+
+.carrucel ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 360rem;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.carrucel li {
+    width: 100%;
+    list-style: none;
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+.carrucel img {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .carrucel,
+    .carrucel ul,
+    .carrucel img {
+        height: 100vh;
+    }
+}
+
+.texto-producto {
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.tienda-grid{
+    display: grid;
+    grid-template-rows: repeat(5);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.buscador-carrito{
+    grid-column: 1/3;
+}
+
+.carrucel{
+    grid-column: 1/3;
+}
+
+.producto-1, .producto-3, .producto-5{
+    grid-column: 1/2;
+}
+
+.producto-1, .producto3, .producto-5{
+    margin-left: 4rem;
+}
+
+.producto-1, .producto-2{
+    margin-top: 5rem;
+}
+
+.img-producto{
+    height: 43rem;
+    width: 90%;
+    object-fit: cover;
+}
+
+.producto-2, .prodcuto-4, .producto-6{
+    grid-column: 2/3;
+}
